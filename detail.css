@@ -1,0 +1,10 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.info{margin-bottom: 40px;}
+.info>p:nth-child(1){font-size: 20px;margin-bottom: 1em;}
+.info>p:nth-child(2){font-size: 18px;}
+.info>p:nth-child(2) p{margin-bottom: 0.5em;}
+a{color: #333;text-decoration: none;padding: 12px;border: 1px solid #000;display: block;}
+a:visited{color: inherit;}
+
+.tc2{margin-top: 40px;}
+.tc2-text{font-size: 20px;margin-bottom: 1em;}

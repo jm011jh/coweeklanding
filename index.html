@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>co-week 랜딩페이지</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./public.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div id="header" class="header"></div>
+    <div id="container" class="container">
+        <div class="main--sect01">
+            <div class="sect01--row sect01--row01">
+                <div class="sect01--row01-imgs">
+                    <div class="sect01--row01-abs01 sect01--row01-abs"><img src="./images/main_titleClock.png" alt=""></div>
+                    <div class="sect01--row01-abs02 sect01--row01-abs"><img src="./images/main_titleChar.png" alt=""></div>
+                </div>
+                <div class="sect01--row01-center">
+                    <img src="./images/main_titleText.png" alt="">
+                    <p>OPEN 10.07.(금)</p>
+                </div>
+                <div class="sect01--row01-cont">
+                        <div class="sect01--row01-text">
+                            <p>⏰<b>수강신청 기간까지</b>⏰</p>
+                            <p>10.7~10.10 23:59 에 종료</p>
+                        </div>
+                        <div class="sect01--row01-time">
+                            <div class="sect01--row01-timeBox time--day"><span id="timeD"></span>일</div>
+                            <div class="sect01--row01-timeBox time--hour"><span id="timeH"></span>시</div>
+                            <div class="sect01--row01-timeBox time--min"><span id="timeM"></span>분</div>
+                            <div class="sect01--row01-timeBox time--sec"><span id="timeS">00</span>초</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="main--sect02">
+            <div class="tc-list" id="tcList"><!-- 이 안에 리스트가 들어갈 예정  --></div>
+        </div>
+        <div class="main--sect03">
+            <div class="main--sect03-bg">
+                <img src="./images/main03cha.png" alt="">
+            </div>
+            <div class="main--titleBox">
+                <div class="main--titleBox-text01">POSTER</div>
+                <div class="main--titleBox-text02">Co-Week 행사 포스터</div>
+                <div class="main--titleBox-text03">코위크에서 진행하는 다양한 교육과 이벤트를 접해보세요.</div>
+            </div>
+            <div class="main--sect03-img01"><img src="./images/main03poster.png" alt=""></div>
+            <div class="main--sect03-download"><a href="./images/main03poster.png">포스터 다운로드</a></div>
+        </div>
+        <div class="main--sect04">
+            <div class="main--titleBox">
+                <div class="main--titleBox-text01">VIDEO</div>
+                <div class="main--titleBox-text02">영상으로 만나는 Co-Week</div>
+            </div>
+            <div class="main--sect04-video">
+                <video playsinline src=""></video>
+                video here
+            </div>
+        </div>
+    </div>
+    <script src="./component.js"></script>
+    <script type="module" src="./getTime.js"></script> 
+    <script type="module" src="./callData.js"></script> 
+</body>
+</html>
