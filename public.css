@@ -92,3 +92,11 @@ a:visited{color: inherit;}
     .header--center a{width: unset;font-size: 14px;height: 78px;}
     .header--right{display: none;}
 }
+
+.footer{width: 100%;padding: 40px 20px;background-color: #0e0e0f;}
+.footer--wrap{display: flex;justify-content: space-between;width: 100%;max-width: 1280px;margin: auto;}
+.footer--wrap-box{max-width: 630px;font-size: 12px;color: #595c63;display: flex;flex-direction: column;justify-content: flex-end;}
+.footer--wrap-box .big{font-size: 13px;color: #fff;margin: 16px 0;}
+@media all and (max-width:767px){
+    .footer--wrap{flex-direction: column;}
+}

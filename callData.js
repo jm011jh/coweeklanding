@@ -3,7 +3,6 @@ const dataCount = data.length;
 const $tcList = document.getElementById("tcList")
 const $Pm01 = document.getElementById("Pm01")
 const $Pm02 = document.getElementById("Pm02")
-
 for(let i = 0; i < dataCount; i++){
     let date = data[i].date
     let timeNumber = data[i].timeNumber
@@ -34,6 +33,24 @@ for(let i = 0; i < dataCount; i++){
     $title.classList.add("main--sect02-dataCol02item-title")
     $title.innerHTML = data[i].clName1
     $list.appendChild($title)
+
+    let $card = document.createElement("div")//호버카드 만들기
+    $card.classList.add("main--sect02-dataCol02itemOpen")
+    $list.appendChild($card)
+
+    let $tcName = document.createElement("div")//강사이름 만들기
+    $tcName.classList.add("main--sect02-dataCol02itemName")
+    $tcName.innerHTML = data[i].tcName
+    $card.appendChild($tcName)
+    let $tcWhere = document.createElement("div")//강사이름 만들기
+    $tcWhere.classList.add("main--sect02-dataCol02itemWhere")
+    $tcWhere.innerHTML = data[i].tcWhere
+    $card.appendChild($tcWhere)
+    let $clGoal = document.createElement("div")//강의목표 만들기
+    $clGoal.classList.add("main--sect02-dataCol02itemGoal")
+    $clGoal.innerHTML = data[i].clGoal
+    $card.appendChild($clGoal)
+
 
     if( timeNumber == 1 ){//리스트타입에 따라 오후파트 1,2 로 나뉘어서 보내기
         $Pm01.appendChild($list)
@@ -77,4 +94,14 @@ $date28.addEventListener("click",function(){
     for(let  el of $itemAll){el.classList.remove("show")}
     for(let  el of $items28){el.classList.add("show")}
     document.querySelector(".onlyData").classList.add("hide")
+})
+
+$itemAll.forEach(function(el,i){
+    let child = el.querySelector(".main--sect02-dataCol02itemOpen")
+    el.addEventListener("mouseenter",function(){
+        child.classList.add("show")
+    })
+    el.addEventListener("mouseleave",function(){
+        child.classList.remove("show")
+    })
 })
