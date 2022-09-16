@@ -8,8 +8,8 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 .info{display: flex;margin-bottom: 20px;}
 
-a{color: #333;text-decoration: none;padding: 12px;border-bottom: 1px solid #000;display: block;}
-a:hover{background-color: #ccc;}
+a{text-decoration: none;padding: 12px;border-bottom: 1px solid #000;display: block;}
+/* a:hover{background-color: #ccc;} */
 a:visited{color: inherit;}
 
 .main--sect01{background-image: url(./images/bg_texture.png);width: 100%;background-position: 27px 0;padding-top: 40px;}
@@ -37,8 +37,8 @@ a:visited{color: inherit;}
 .main--titleBox-text03{font-size: 18px;color: rgba(255,255,255,0.8);}
 .main--sect03-img01{margin: 60px auto 0;position: relative;}
 .main--sect03-img01 img{width: 100%;max-width: 450px;margin: auto;display: block;}
-.main--sect03-download{margin: 40px auto;}
-.main--sect03-download a{width: 200px;height: 60px;text-align: center;display: flex;align-items: center;justify-content: center;background-color: var(--black03--);color: #fff;margin: auto;border-radius: 6px;font-weight: 800;}
+.main--sect03-download{margin: 40px auto 0;}
+.main--sect03-download a{width: 200px;height: 60px;text-align: center;display: flex;align-items: center;justify-content: center;background-color: var(--black03--);color: #fff;margin: auto;border-radius: 6px;font-weight: 800;font-size: 16px;}
 .main--sect03-bg{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 100%;max-width: 1280px;padding: 0 20px;}
 .main--sect03-bg img{width: 100%;}
 
@@ -47,13 +47,21 @@ a:visited{color: inherit;}
 .main--sect04-video video{display: block;width: 100%;}
 
 @media all and (max-width:767px){
+    .main--sect04,
+    .main--sect03{padding: 80px 0 100px;}
     .sect01--row01-abs01{width: 150px;left: 50%;transform: translate(-100%,-50%);}
     .sect01--row01-abs02{width: 240px;left: 50%;right: unset;}
     .sect01--row01-text{flex-direction: column;font-size: 16px;}
     .sect01--row01-text p:first-child{margin-right: 0;}
+    .main--sect03-download a{font-size: 14px;}
     .sect01--row01-timeBox{font-size: 20px;width: 70px;height: 48px;}
+    .main--titleBox-text01{font-size: 14px;}
+    .main--titleBox-text02{font-size: 24px;}
+    .main--titleBox-text03{font-size: 16px;}
 }
 @media all and (max-width:480px){
     .sect01--row01-abs01{width: 150px;}
     .sect01--row01-abs02{width: 240px;}
+    .sect01--row01-cont{padding: 40px var(--sidePadding--);}
+    .sect01--row01-timeBox{font-size: 16px;width: 60px;height: 40px;}
 }
