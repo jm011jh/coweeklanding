@@ -5,6 +5,7 @@
     --blue01--:#0a54ff;
     --yellow01--:#ffc939;
 }
+body.scrollOff{overflow: hidden;height: 100%;}
 *{margin: 0;padding: 0;box-sizing: border-box;}
 .info{display: flex;margin-bottom: 20px;}
 
@@ -147,3 +148,40 @@ a:visited{color: inherit;}
     .sect05-text04{font-size: 14px;}
     .main--sect03-download a{width: 140px;}
 }
+
+.main--popup{width: 100%;height: 100%;position: fixed;top: 0;left: 0;z-index: 51;display: none;}
+.main--popup.show{display: block;}
+.main--popup-close{width: 40px;height: 40px;position: absolute;top: 20px;right: 16px;cursor: pointer;}
+.main--popup-close span{width: 2px;height: 24px;display: block;position: absolute;background-color: #fff;transform: translate(-50%,-50%) rotate(-45deg);top: 50%;left: 50%;}
+.main--popup-close span:nth-child(2){transform:translate(-50%,-50%)rotate(45deg);}
+.main--popup-bg{width: 100%;height: 100%;position: absolute;top: 0;left: 0;background-color: rgba(0,0,0, 0.5)}
+.main--popup-list{width: 100%;height: 100%;position: relative;margin: auto;}
+.main--popup-listItem{width: calc(100% - 40px);background-color: #fff;padding: 0px 24px 30px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);display: none;max-width: 640px;max-height: calc(100vh - 40px);overflow: scroll;border-radius: 10px;}
+.main--popup-listItem::-webkit-scrollbar{display: none;}
+.main--popup-listItem.on{display: block;}
+
+
+
+.main--popup-title{font-size: 20px;padding: 30px 0 18px;border-bottom: 1px solid #ddd;margin-bottom: 24px;font-weight: 500;}
+.main--popup-name{font-size: 18px;margin-bottom: 1.33333em;font-weight: 500;}
+.main--popup-tcName{font-size: 16px;margin-bottom: 1em;font-weight: 500;}
+.main--popup-tcWhere{font-size: 15px;margin-bottom: 0.5em;}
+.main--popup-type{font-size: 15px;margin-bottom: 1em;}
+.main--popup-goal{font-size: 16px;margin-bottom: 1em;line-height: 1.5;}
+.main--popup-exp{font-size: 16px;line-height: 1.5;}
+.main--popup-where{font-size: 16px;margin-bottom: 1em;}
+.main--popup-recommend{font-size: 16px;margin-bottom: 1em;line-height: 1.5;}
+.main--popup-expection{font-size: 16px;margin-bottom: 3em;line-height: 1.5;}
+
+.main--popup-goal span,
+.main--popup-exp span{display: block;margin-top: 24px;font-weight: 500;}
+.main--popup-goal p,
+.main--popup-exp p{display: block;background-color: #efefef;padding: 16px;border-radius: 10px;margin-top: 12px;font-size: 15px;}
+
+.main--excel{width: 100%;overflow: scroll;background-color: #f7f7f7;padding:0 0 120px 0;}
+.main--excel::-webkit-scrollbar{display: none;}
+.main--excel table{width: 100%;max-width: 1320px;margin: 0 auto;padding: 0 20px;}
+table th{outline: 1px solid #ddd;background-color: #fff;}
+table td{outline: 1px solid #ddd;padding: 12px;text-align: center;background-color: #fff;}
+.table--title{font-size: 18px;padding: 20px;}
+.table--tr-class th{padding: 20px;}

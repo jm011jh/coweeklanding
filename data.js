@@ -618,7 +618,7 @@ export default [
         tcEmail2 : "hyojung.jung@dankook.ac.kr",
         date:26,
         timeNumber:2,
-    },{//김미영 황윤자
+    },{//김미영 황윤자 이성희
         clName1 : "환자를 메이커(Maker)로, 전문가(expert)로, 협력자(collaborator)로",
         
         clType : "바이오헬스",
@@ -642,7 +642,7 @@ export default [
         tcTel : "",
         tcEmail : "",
         tc2 : true,
-        tcName2 :"황윤자",
+        tcName2 :"이성희 황윤자",
         tcWhere2 : "단국대학교",
         tcType2 : "교수",
         tyTel2 : "",
