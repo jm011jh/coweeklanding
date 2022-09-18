@@ -36,8 +36,8 @@ var seconds = date.getSeconds();
 
 // 
 
-CountDownSet('10/07/2022', 'countdown');
-CountDownTimer('10/07/2022', 'countdown');
+CountDownSet('10/04/2022', 'countdown');
+CountDownTimer('10/04/2022', 'countdown');
 
     function CountDownTimer(dt, id){
         var end = new Date(dt);

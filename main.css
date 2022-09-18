@@ -223,7 +223,7 @@ a:visited{color: inherit;}
 .main--sect02-table th{outline:none;background-color: #0b1223;color: #fff;padding: 12px;font-weight: 400;}
 .main--sect02-table td{outline:none;text-align: center;font-weight: 600;padding: 12px;font-size: 18px;}
 .main--sect02-table td.td-gray{font-weight: 400;}
-/* .main--sect02-table td.td-pink{background-color: rgb(248, 217, 217);} */
-/* .main--sect02-table td.td-yellow{background-color: rgb(255, 234, 189);} */
-/* .main--sect02-table td.td-green{background-color: rgb(223, 255, 244);} */
+.main--sect02-table td.td-pink{background-color: rgb(248, 217, 217);}
+.main--sect02-table td.td-yellow{background-color: rgb(255, 234, 189);}
+.main--sect02-table td.td-green{background-color: rgb(223, 255, 244);}
 .main--sect02-table td.td-blue{background-color: #c4d6ff;}
