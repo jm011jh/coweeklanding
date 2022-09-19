@@ -276,3 +276,9 @@ a:visited{color: inherit;}
 .eventPopup img{width: 100%;display: block;}
 .eventPopup a{position: absolute;bottom: 30px;left: 0;width: 100%;padding-top: 16%;}
 .eventPopup #eventPopupClose{display: block;margin-left: auto;padding: 4px;outline: none;border: none;margin-top: 4px;cursor: pointer;color: 111;border-radius: 0;background-color: rgba(200,200,200,.5);width: 20px;font-size: 14px;text-align: center;transform: scaleY(0.9);}
+.alwaysButton{position: fixed;z-index: 70;bottom: 60px;right: 40px;}
+.alwaysButton img{width: 108px;}
+@media all and (max-width:767px){
+    .alwaysButton{right: 20px;bottom: 20px;}
+    .alwaysButton img{width: 68px;}
+}
