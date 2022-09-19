@@ -1,0 +1,1 @@
+const cont = document.querySelectorAll(".sub--03-cont")

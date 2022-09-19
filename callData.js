@@ -215,6 +215,7 @@ $itemAll.forEach(function(el,i){
 
 $classPopClose.addEventListener("click",function(){
     $classPop.classList.remove("show")
+    $("body").removeClass("scrollOff")
 })
 $classPopBg.addEventListener("click",function(){
     $classPop.classList.remove("show")
