@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>welcome to co-week</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <link rel="stylesheet" href="./public.css">
     <link rel="stylesheet" href="./main.css">
+    <script src="./popup.js"></script>
 </head>
 <body>
     <div id="container" class="container">
@@ -782,17 +784,24 @@
         <div class="eventPopup--img">
             <img src="./images/event_popup.png" alt="">
             <a href="./sub.html"></a>
-            <div id="eventPopupClose">X</div>
+            <div class="eventPopup--buttons">
+                <div onclick="todaycloseWin01()" class="eventPopupOneday" id="eventPopupOneday">하루동안 열지않기</div>
+                <div onclick="closeWin01()" class="eventPopupClose" id="eventPopupClose">닫기</div>
+            </div>
+        </div>
+    </div>
+    <div id="eventPopup02" class="eventPopup eventPopup02">
+        <div class="eventPopup--img">
+            <img src="./images/event_popup02.png" alt="">
+            <div class="eventPopup--buttons">
+                <div onclick="todaycloseWin02()" class="eventPopupOneday" id="eventPopupOneday02">하루동안 열지않기</div>
+                <div onclick="closeWin02()" class="eventPopupClose" id="eventPopupClose02">닫기</div>
+            </div>
         </div>
     </div>
     <div id="alwaysButton" class="alwaysButton"><a href="https://coss.nrf.re.kr/main.do" target="blank"><img src="./images/alwaysButton.png" alt=""></a></div>
     <script src="./component.js"></script>
     <script type="module" src="./getTime.js"></script>
     <script type="module" src="./callData.js"></script>
-    <script>
-        document.getElementById("eventPopupClose").addEventListener("click",function(){
-            document.getElementById("eventPopup").classList.add("hide")
-        })
-    </script>
 </body>
 </html>
