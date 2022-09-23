@@ -1064,9 +1064,9 @@ export default [
         date:28,
         timeNumber:2,
     },{//박민준
-        clName1 : " 우리가 사용하는 리튬이온전지의 작동원리와 제조 과정 소개",
+        clName1 : "리튬이온전지의 작동원리와 제조 기초	",
         
-        clType : "에너지산업",
+        clType : "에너지신산업",
         clSchool : "부산대학교",
         clGoal : "상용화된 리튬이온전지에 대한 기본적인 내용 이해",
         clData : "yes",
@@ -1112,7 +1112,7 @@ export default [
         date:26,
         timeNumber:2,
     },{//이광세
-        clName1 : "에너지 소재의 과거, 현재와 미래",
+        clName1 : "이차전지 산업의 과거, 현재와 미래",
         
         clType : "이차전지",
         clSchool : "경남정보대학교",
@@ -1137,7 +1137,7 @@ export default [
         date:27,
         timeNumber:1,
     },{//김기현
-        clName1 : "2050 탄소중립과 에너지 전환",
+        clName1 : "ESG와 에너지 경영",
         
         clType : "에너지신산업",
         clSchool : "강원대학교",
@@ -1159,8 +1159,7 @@ export default [
         date:28,
         timeNumber:1,
     },{//윤영수
-        clName1 : "차세대 리튬이온전지의 신기술",
-        
+        clName1 : "차세대 에너지저장 소재의 신기술", 
         clType : "이차전지",
         clSchool : "고려대학교",
         clGoal : "이차전지의 산업동향 및 4대 구성요소를 알 수 있다.",
@@ -1184,7 +1183,7 @@ export default [
         date:27,
         timeNumber:2,
     },{//정학근
-        clName1 : "탄소중립과 에너지기술",
+        clName1 : "탄소중립과 에너지신산업의 미래기술 개발",
         
         clType : "에너지신산업",
         clSchool : "",

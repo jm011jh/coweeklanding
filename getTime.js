@@ -12,29 +12,6 @@ var day = date.getDate();
 var hours = date.getHours();
 var minutes = date.getMinutes();
 var seconds = date.getSeconds();
-// timeD.innerHTML = day
-// timeH.innerHTML = hours
-// timeM.innerHTML = minutes
-// timeS.innerHTML = seconds
-
-// var secondsInterval = setInterval(()=>{
-
-//     date = new Date();
-
-//     let d = (60 - date.getDate())
-//     timeD.innerHTML = d < 10 ? d = 0 + String(d) : d = String(d)
-
-//     let s = (60 - date.getSeconds())
-//     timeS.innerHTML = s < 10 ? s = 0 + String(s) : s = String(s)
-
-//     let m = (60 - date.getMinutes())
-//     timeM.innerHTML = m < 10 ? m = 0 + String(m) : m = String(m)
-
-//     let h = (60 - date.getHours())
-//     timeM.innerHTML = h < 10 ? h = 0 + String(h) : h = String(h)
-// },1000)
-
-// 
 
 CountDownSet('10/04/2022', 'countdown');
 CountDownTimer('10/04/2022', 'countdown');
@@ -76,6 +53,7 @@ CountDownTimer('10/04/2022', 'countdown');
         var _day = _hour * 24;
         var timer;
         var distance = end - now;
+
         if (distance < 0) {
             timeD.innerHTML = "00";
             timeH.innerHTML = "00";
@@ -83,9 +61,8 @@ CountDownTimer('10/04/2022', 'countdown');
             timeS.innerHTML = "00";
         }
 
-            timeD.innerHTML = Math.floor(distance / _day);
-            timeH.innerHTML = Math.floor((distance % _day) / _hour);
-            timeM.innerHTML = Math.floor((distance % _hour) / _minute);
-            timeS.innerHTML = Math.floor((distance % _minute) / _second);
-
+        timeD.innerHTML = Math.floor(distance / _day);
+        timeH.innerHTML = Math.floor((distance % _day) / _hour);
+        timeM.innerHTML = Math.floor((distance % _hour) / _minute);
+        timeS.innerHTML = Math.floor((distance % _minute) / _second);
     }
