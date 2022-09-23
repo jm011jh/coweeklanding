@@ -118,7 +118,7 @@ a:visited{color: inherit;}
 .main--sect03-bg img{width: 100%;}
 
 .main--sect04{background-color: var(--black02--);padding: 120px 0 180px;}
-.main--sect04-video{width: 100%;max-width: 756px;background-color: #fff;margin: 60px auto 0;position: relative;background-color: #000;}
+.main--sect04-video{width: 100%;max-width: 756px;background-color: #fff;margin: 60px auto 0;position: relative;}
 .main--sect04-video video{display: block;width: 100%;}
 .main--sect04-video p{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);font-size: 32px;color: #fff;}
 @media all and (max-width:1024px){
