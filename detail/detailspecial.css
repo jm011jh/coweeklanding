@@ -17,8 +17,22 @@
 .detail--contents-graph-iconWrap{display: flex;justify-content: space-between;max-width: 590px;margin: auto;}
 /* .detail--contents-graph-iconItem{width: 33%;} */
 .detail--contents-graph-iconItem p{font-size: 15px;margin-top: 1.5em;line-height: 1;}
+.detail--contents-graph-iconItem img{width: 100%;}
+@media all and (max-width:480px){
+    .detail--contents-graph-circle{padding: 0 20px;}
+    .detail--contents-graph-cicleFigure{width: 80px;height: 80px;border-width: 2px 2px 2px 2px;}
+    .detail--contents-graph-circleItem span{font-size: 15px;}
+    .detail--contents-graph-circleItem p{font-size: 13px;}
+    .detail--contents-graph-circleItem p br{display: none;}
+}
 
 .detail--contents-about01:not(:first-child){margin-top: 80px;}
 .detail--contents-recommend{margin-bottom: 40px;}
 .detail--contents-about:not(:first-child){margin-top: 40px;}
 .detail--contents-about-text01{margin-bottom: 0.5 em;}
+@media all and (max-width:1024px){
+    .public--container{margin-top: 0;}
+}
+@media all and (max-width:767px){
+    .detail--contents-graph-icon{padding: 24px 20px;}
+}

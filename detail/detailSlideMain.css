@@ -70,7 +70,7 @@ body{background-color: var(--black01--);}
     .detailMain--item:not(:nth-child(3n)){margin-right: 20px;}
 }
 @media all and (max-width:767px){
-    .main--classFigure{margin-top: 0;}
+    .main--classFigure{margin-top: 0;margin-bottom: 80px;}
     .detailMain--item{width: calc(50% - 5px);margin-bottom: 40px;}
     .detailMain--item:not(:nth-child(3n)){margin-right: 0px;}
     .detailMain--item:nth-child(odd){margin-right: 10px;}

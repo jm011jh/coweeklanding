@@ -57,6 +57,8 @@
 @media all and (max-width:1024px){
     .main--classFigure{padding: 0 40px;}
     .figureSwiper-button{padding: 0 12px;}
+    .classFigure--head-text01,
+.promoEvent--head-text02{font-size: 20px;}
 }
 
 .main--category{width: 100%;padding: 0 var(--sidePadding--);margin-top: 150px;}

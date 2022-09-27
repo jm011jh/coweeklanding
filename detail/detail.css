@@ -25,7 +25,9 @@
 .detail--thumb-cha{position: relative;display: flex;justify-content: center;width: 100%;max-width: 440px;margin: auto;animation: 1s 0.6s thumbCha forwards;opacity: 0;margin-top: 120px;padding: 0 20px;}
 .detail--thumb-cha02{max-width: 520px;margin-top: 0px;}
 .detail--thumb-cha img{width: 100%;margin: auto;display: block;}
-
+@media all and (max-width:767px){
+    .detail--thumb-imgTitle{padding-top: 140px;}
+}
 .detail--thumb-text{position: absolute;bottom: 0;left: 50%;transform: translate(-50%,0);text-align: center;color: #fff;width: 100%;padding: 0 var(--sidePadding--);padding-bottom: 42px;animation:1s 1s thumbText forwards;opacity: 0;}
 .detail--thumb-text01{display: flex;justify-content: center;margin-bottom: 18px;}
 .detail--thumb-text01 p{color: #ff492b;background-color: var(--black02--);border-radius: 20px;font-size: 16px;font-weight: 600;padding: 7px 14px;}
@@ -38,7 +40,7 @@
 .detail--thumb-text04{font-size: 16px;line-height: 1.66 ;max-width: 420px;margin: 0 auto;}
 @media all and (max-width:767px){
     .detail--thumb-text01 p{font-size: 13px;padding: 6px 13px;}
-    .detail--thumb-text02 p{font-size: 24px;}
+    .detail--thumb-text02 p{font-size: 20px;}
     .detail--thumb-text04{font-size: 14px;}
 }
 .detail--body{display: flex;justify-content: flex-end;color: #fff;padding: 0 var(--sidePadding--);}
@@ -50,6 +52,7 @@
 .detail--contents-thumbText{font-size: 24px;font-weight: 700;;line-height: 1.66;margin-top: 0.3em;}
 @media all and (max-width:767px){
     .detail--contents-thumbText{font-size: 20px;}
+    .detail--contents-thumbText br{display: none;}
 }
 .detail--contents-recommend{margin-top: 60px;text-align: center;margin-bottom: 70px;}
 .detail--contents-recommend-text01{font-size: 18px;font-weight: 700;margin-bottom: 0.8em;}
@@ -117,7 +120,7 @@
     .detail--aside{width: 100%;max-width: unset;margin-left: 0;}
     .detail--aside-contents{padding: 24px 20px 10px;}
     .detail--aside-line{margin: 24px 0;}
-    .detail--contents{width: 100%;max-width: unset;margin-top: 80px;}
+    .detail--contents{width: 100%;max-width: unset;}
     .detail--aside-text02{font-size: 18px;}
     .detail--aside-dropDownButton{font-size: 16px;}
     .detail--aside-button a{font-size: 14px;padding: 14px 10px;}
