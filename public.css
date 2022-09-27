@@ -60,7 +60,7 @@
     font-display: swap;
     src: local("Pretendard Thin"), url("/font/woff2/Pretendard-Thin.woff2") format("woff2"), url("/font/woff/Pretendard-Thin.woff") format("woff"), url("/font/otf/Pretendard-Thin.otf") format("otf");
 }
-*{padding: 0;margin: 0;box-sizing: border-box;word-break: keep-all;font-family: 'Pretendard',helvetica, 'AppleSD',sans-serif;}
+*{padding: 0;margin: 0;box-sizing: border-box;word-break: keep-all;font-family: 'Pretendard';}
 :root{
     --sidePadding--:36px;
     --black01--:#0b1223;
@@ -84,15 +84,19 @@ a:visited{color: inherit;text-decoration: none !important;}
 .header--center a:visited{color: #fff;}
 .header--center a.on{color: #fff;border-bottom: 2px solid #fff;}
 .header.color .header--center a.on{color: #fff;border-bottom: 2px solid #fff;}
-@media all and (max-width:767px){
-    :root{
-        --sidePadding--:18px;
-    }
+@media all and (max-width:1024px){
     .header{height: 80px;padding: 10px 0;}
     .header--left{font-size: 16px;}
     .header--center{position: static;left: unset;top: unset;transform: translate(0%,0%);}
     .header--center a{width: unset;font-size: 14px;height: 78px;}
     .header--right{display: none;}
+}
+@media all and (max-width:767px){
+    :root{
+        --sidePadding--:18px;
+    }
+    .header{height: 60px;}
+    .header--center a{font-size: 13px;height: 60px;}
 }
 
 .footer{width: 100%;padding: 40px 20px;background-color: #0e0e0f;}
