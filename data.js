@@ -114,17 +114,12 @@ export default [
         timeNumber:2,
     },{//이슬찬
         clName1 : "빅데이터와 사용자경험",
-        
         clType : "빅데이터",
         clSchool : "경상국립대학교",
         clGoal : "사용자 중심의 빅데이터 접근에 대한 이해",
         clData : "notyet",
-        clRecommendFor : [
-            
-        ],
-        clExpection : [
-            
-        ],
+        clRecommendFor : ["미래 기술 사회 변화에 관심있는 모든 학생"],
+        clExpection : ["사용자 중심의 관점에서 기술 변화에 대한 이해 증진"],
         clReference : [""],
         clIndex : 1,
         tcName : "이슬찬",

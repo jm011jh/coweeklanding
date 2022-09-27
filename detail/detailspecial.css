@@ -5,8 +5,8 @@
 .detail--contents-graph-downArrow img{display: block;margin: auto;max-width: 97px;width: 100%;}
 
 .detail--contents-graph-circle{margin-bottom: 94px;}
-.detail--contents-graph-circleWrap{display: flex;justify-content: space-between;text-align: center;width: 100%;max-width: 640px;margin: auto;}
-.detail--contents-graph-cicleItem{margin: 0 10px;}
+.detail--contents-graph-circleWrap{display: flex;justify-content: space-around;text-align: center;width: 100%;max-width: 640px;margin: auto;}
+.detail--contents-graph-circleItem{margin: 0 10px;width: 33%;}
 .detail--contents-graph-circleItem span{font-weight: 700;font-size: 18px;}
 .detail--contents-graph-circleItem p{font-size: 15px;line-height: 1.66em;margin-top: 1em;}
 .detail--contents-graph-circleItem:nth-child(1) span{color: #6e9eff;}
