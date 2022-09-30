@@ -27,21 +27,23 @@ a:visited{color: inherit;}
 .sect01--row01-text{color: #fff;font-size: 20px;display: flex;align-items: center;margin-bottom: 28px;}
 .sect01--row01-text p:first-child{margin-right: 16px;}
 .sect01--row01-text p{display: block;text-align: center;}
-.sect01--row02{color: #fff;display: flex;justify-content: space-between;width: 100%;max-width: 1580px;padding: 0 20px;margin-bottom: 20px;}
-.sect01--row2-text01{display: flex;margin-right: 72px;font-size: 22px;}
-.sect01--row2-text02{font-size: 28px;text-align: right;}
-.sect01--row2-1{display: flex;align-items: flex-end;margin-bottom: 44px;}
+.sect01--row02{color: #fff;display: flex;justify-content: space-between;width: 100%;max-width: 1580px;padding: 0 20px;margin-bottom: 20px;align-items: flex-end;}
+.sect01--row2-text01{display: flex;font-size: 18px;line-height: 1.66;}
+.sect01--row2-text02{font-size: 28px;text-align: center;}
+.sect01--row2-1{display: flex;align-items: flex-start;flex-direction: column;margin-bottom: 40px;}
 .sect01--row2-1 span{width: 60px;display: block;font-weight: 600;}
+.sect01--row2-3{margin-bottom: 40px;}
 .sect01--row01-time{display: flex;}
 .sect01--row01-timeBox:not(:first-child){margin-left: 8px;}
 .sect01--row01-timeBox span{width: 120px;height: 80px;border-radius: 8px;background-color: #1e1e1e;color: var(--yellow01--);font-size: 32px;font-weight: 700;display: flex;align-items: center;justify-content: center;}
 .sect01--row01-timeBox p{font-size: 18px;margin-top: 1em;text-align: center;color: #fff;font-weight: 500;}
 @media all and (max-width:1024px){
     .sect01--row02{flex-direction: column;align-items: center;}
-    .sect01--row2-text01{margin-right: 40px;font-size: 18px;}
+    .sect01--row2-text01{font-size: 18px;flex-direction: column;align-items: center;width: 100%;}
     .sect01--row2-text01:last-child{margin-right: 0;}
-    .sect01--row2-text02{font-size: 28px;text-align: right;}
-    .sect01--row2-1{display: flex;align-items: flex-end;margin-bottom: 44px;}
+    .sect01--row2-text02{font-size: 22px;text-align: right;}
+    .sect01--row2-1{display: flex;align-items: flex-end;margin-bottom: 44px;align-items: center;}
+    .sect01--row2-1 span{text-align: center;}
     .sect01--row2-1 span{width: 60px;display: block;}
 }
 @media all and (max-width:767px){
