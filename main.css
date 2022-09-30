@@ -186,15 +186,16 @@ a:visited{color: inherit;}
 }
 
 .main--popup{width: 100%;height: 100%;position: fixed;top: 0;left: 0;z-index: 51;display: none;}
-.main--popup.show{display: block;}
-.main--popup-close{width: 40px;height: 40px;position: absolute;top: 20px;right: 16px;cursor: pointer;}
-.main--popup-close span{width: 2px;height: 24px;display: block;position: absolute;background-color: #fff;transform: translate(-50%,-50%) rotate(-45deg);top: 50%;left: 50%;}
+.main--popup.show{display: flex;justify-content: center;align-items: center;}
+.main--popup-close{width: 40px;height: 40px;position: absolute;top: 20px;right: 36px;cursor: pointer;z-index: 10;}
+.main--popup-close span{width: 2px;height: 24px;display: block;position: absolute;background-color: #333;transform: translate(-50%,-50%) rotate(-45deg);top: 50%;left: 50%;}
 .main--popup-close span:nth-child(2){transform:translate(-50%,-50%)rotate(45deg);}
 .main--popup-bg{width: 100%;height: 100%;position: absolute;top: 0;left: 0;background-color: rgba(0,0,0, 0.5)}
+.main--popup-container{position: relative;}
 .main--popup-list{width: 100%;height: 100%;position: relative;margin: auto;}
 .main--popup-listItem{width: calc(100% - 40px);background-color: #fff;padding: 0px 24px 30px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);display: none;max-width: 640px;max-height: calc(100vh - 260px);overflow: scroll;border-radius: 10px;}
 .main--popup-listItem::-webkit-scrollbar{display: none;}
-.main--popup-listItem.on{display: block;}
+.main--popup-listItem.on{display: block;position: relative;transform: translate(0%,0%);left: unset;top: unset;margin: auto;}
 
 
 

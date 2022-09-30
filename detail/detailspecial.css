@@ -17,7 +17,7 @@
 .detail--contents-graph-iconWrap{display: flex;justify-content: space-between;max-width: 590px;margin: auto;}
 /* .detail--contents-graph-iconItem{width: 33%;} */
 .detail--contents-graph-iconItem p{font-size: 15px;margin-top: 1.5em;line-height: 1;}
-.detail--contents-graph-iconItem img{width: 100%;}
+/* .detail--contents-graph-iconItem img{width: 100%;} */
 @media all and (max-width:480px){
     .detail--contents-graph-circleWrap{flex-direction: column;}
     .detail--contents-graph-circle{padding: 0 20px;}

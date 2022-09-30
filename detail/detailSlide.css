@@ -33,7 +33,7 @@
 .classFigure--online{background-color: var(--purple--);color: #fff;}
 .classFigure--time{display: flex;font-size: 12px;align-items: center;color: var(--grayA--);display: none;}
 .classFigure--time span{width: 1px;height: 8px;background-color: rgba(255,255,255,0.3);margin: 0 7px;}
-.classFigure--title{line-height: 1.5;color: var(--white01--);font-size: 16px;font-weight: 800;margin-top: 15px;padding: 0 10px;}
+.classFigure--title{line-height: 1.5;color: var(--white01--);font-size: 16px;font-weight: 700;margin-top: 15px;padding: 0 10px;}
 .classFigure--tags{display: flex;margin-top: 20px;}
 .classFigure--tags p:first-child{margin-right: 8px;}
 .classFigure--tags p{padding: 7px 8px;border-radius: 4px;background-color: var(--black02--);color: var(--white01--);}
@@ -42,7 +42,7 @@
 .promoEvent--head{display: flex;justify-content: space-between;align-items: flex-end;width: 100%;max-width: 1280px;margin:0 auto 28px;color: #fff;}
 .promoEvent--head-text01{font-size: 16px;font-weight: 500;margin-bottom: 1em;}
 .classFigure--head-text01,
-.promoEvent--head-text02{font-size: 24px;font-weight: 800;}
+.promoEvent--head-text02{font-size: 24px;font-weight: 700;}
 .promoEvent--head-text02{line-height: 1.5;margin-bottom: 0.5em;}
 .promoEvent--head-text03{font-size: 16px;color: var(--grayBlue--);}
 .promoEvent--thumb{position: relative;width: 100%;padding-top: 112%;background-color: #999;border-radius: 10px;display: block;}

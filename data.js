@@ -228,16 +228,19 @@ export default [
         date:28,
         timeNumber:1,
     },{//김철연
-        clName1 : "미정",
+        clName1 : "데이터 분석 및 활용",
         clType : "빅데이터",
         clSchool : "숙명여자대학교",
-        clGoal : "미정",
-        clData : "notyet",
+        clGoal : "빅데이터 분석에 대한 개요를 이해하고 활용방식을 학습",
+        clData : "no",
         clRecommendFor : [
-            
+            "빅데이터 분석에 대한 입문자로서 개념과 개요를 이해하고자 하는 학부생",
+            "빅데이터 분석 알고리즘에 대한 체계적인 학습을 하고자 하는 학부생"
         ],
         clExpection : [
-            
+            "빅데이터 분석에 대한 개요 이해",
+            "빅데이터 분석 알고리즘에 대한 이해",
+            "데이터 분석 결과 활용방식의 이해"
         ],
         clReference : [""],
         clIndex : 6,
