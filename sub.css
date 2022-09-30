@@ -37,6 +37,10 @@
 .sub--03-text01{font-size: 20px;font-weight: 700;margin-bottom: 1.4em;}
 .sub--03-text02{font-size: 36px;font-weight: 700;}
 .sub--03-text03{font-size: 16px;line-height: 1.66;color: #626262;margin-top: 20px;}
+
+.sub--03-contNew{width: 100%;background-color: #181a1e;color: #fff;border-radius: 10px;padding: 28px;text-align: left;justify-content: flex-start;flex-direction: column;}
+.sub--03-contNew-text01{font-size: 20px;font-weight: 600;}
+.sub--03-contNew-text02{font-size: 16px;line-height: 1.66;margin-top: 1.5em;}
 @media all and (max-width:1024px){
     .sub--03-text01{font-size: 18px;}
         .sub--03-text02{font-size: 24px;}
@@ -73,6 +77,7 @@
     .sub--03-cont-left,
     .sub--03-cont-right{width: 100%;}
     .sub--03-cont-right{border-radius: 0 0 10px 10px;min-height: unset;padding: 40px 20px;}
+    .sub--03-contNew{padding: 20px 16px;}
 }
 @media all and (max-width:480px){
     .sub--02-timeBox span{font-size: 16px;width: 60px;height: 40px;}
