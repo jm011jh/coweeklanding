@@ -19,10 +19,14 @@
 .detail--contents-graph-iconItem p{font-size: 15px;margin-top: 1.5em;line-height: 1;}
 .detail--contents-graph-iconItem img{width: 100%;}
 @media all and (max-width:480px){
+    .detail--contents-graph-circleWrap{flex-direction: column;}
     .detail--contents-graph-circle{padding: 0 20px;}
-    .detail--contents-graph-cicleFigure{width: 80px;height: 80px;border-width: 2px 2px 2px 2px;}
+    .detail--contents-graph-cicleFigure{width: 80px;height: 80px;border-width: 2px 2px 2px 2px;margin: 0;}
+    .detail--contents-graph-circleText{width: calc(100% - 80px);text-align: left;margin-left: 12px;}
+    .detail--contents-graph-circleItem{margin: 0;width: 100%;display: flex;align-items: center;}
+    .detail--contents-graph-circleItem:not(:last-child){margin-bottom: 10px;}
     .detail--contents-graph-circleItem span{font-size: 15px;}
-    .detail--contents-graph-circleItem p{font-size: 13px;}
+    .detail--contents-graph-circleItem p{font-size: 13px;margin: 0;}
     .detail--contents-graph-circleItem p br{display: none;}
 }
 
