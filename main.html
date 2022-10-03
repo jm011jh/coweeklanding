@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to co-week</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <link rel="stylesheet" href="/public.css">
+    <link rel="stylesheet" href="/main.css">
+    <script src="./popup.js"></script>
+</head>
+<body>
+    <div id="container" class="container">
+        <div class="main--sect01">
+            <div class="sect01--row sect01--row01">
+                <div class="sect01--row01-img sect01--row01-img01"><img src="./images/main_text01.png" alt=""></div>
+                <div class="sect01--row02">
+                    <div class="sect01--row2-1">
+                        <div class="sect01--row2-text01"><span>기간</span>2022년 12월 26일(월)~29일(목)</div>
+                        <div class="sect01--row2-text01"><span>장소</span>COEX(서울 삼성동)</div>
+                    </div>
+                    <div class="sect01--row2-3">
+                        <div class="sect01--row2-text02"><p>10월 4일(화) PM 12:00 수강신청 오픈</p></div>
+                    </div>
+                    <div class="sect01--row2-2">
+                        <img src="./images/main_text03.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sect01--row01-cont">
+                    <div class="sect01--row01-text">
+                        <p>⏰<b>&nbsp;&nbsp;수강신청 기간까지&nbsp;&nbsp;</b>⏰</p>
+                        <p>10.04~10.07 23:59 에 종료</p>
+                    </div>
+                    <div class="sect01--row01-time">
+                        <div class="sect01--row01-timeBox time--day">
+                            <span id="timeD"></span>
+                            <p>DAYS</p>
+                        </div>
+                        <div class="sect01--row01-timeBox time--hour">
+                            <span id="timeH"></span>
+                            <p>HOURS</p>
+                        </div>
+                        <div class="sect01--row01-timeBox time--min">
+                            <span id="timeM"></span>
+                            <p>MINS</p>
+                        </div>
+                        <div class="sect01--row01-timeBox time--sec">
+                            <span id="timeS">00</span>
+                            <p>SECS</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="main--sect02">
+            <div class="main--titleBox">
+                <div class="main--titleBox-text01">PROGRAM</div>
+                <div class="main--titleBox-text02">Co-Week 프로그램 일정표</div>
+                <div class="main--titleBox-text03">오프라인 강의기간 : 2022년12월26일(월) ~ 2022년12월29일(목) 까지</div>
+            </div>
+            <div class="main--sect02-chartImg">
+                <div class="main--sect02-chartImgWrap">
+                    <!-- <img src="./images/main_chart.png" alt=""> -->
+                    <table class="main--sect02-table">
+                        <tr>
+                            <th colspan="2">구분</th>
+                            <th>12/26(월)</th>
+                            <th>12/27(화)</th>
+                            <th>12/28(수)</th>
+                            <th>12/29(목)</th>
+                        </tr>
+                        <tr>
+                            <td class="td-gray" rowspan="2">오전</td>
+                            <td class="td-gray">10:00~11:00</td>
+                            <td class="td-pink" rowspan="2">CO-Week Academy<br>입학식</td>
+                            <td class="td-yellow">특별강좌 1</td>
+                            <td class="td-yellow">특별강좌 2</td>
+                            <td class="td-green">명사강연 3</td>
+                        </tr>
+                        <tr>
+                            <td class="td-gray">11:00~12:00</td>
+                            <td class="td-green">명사강연 1</td>
+                            <td class="td-green">명사강연 2</td>
+                            <td class="td-pink">CO-Week Academy<br>수료식</td>
+                        </tr>
+                        <tr>
+                            <td class="td-gray" rowspan="5">오후</td>
+                            <td class="td-gray">12:00~13:00</td>
+                            <td colspan="3">점심시간</td>
+                            <td rowspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-gray">13:00~14:00</td>
+                            <td class="td-blue" rowspan="2">신기술 분야별 강의 I<br>13:00~14:40</td>
+                            <td class="td-blue" rowspan="2">신기술 분야별 강의 III<br>13:00~14:40</td>
+                            <td class="td-blue" rowspan="2">신기술 분야별 강의 V<br>13:00~14:40</td>
+                        </tr>
+                        <tr>
+                            <td class="td-gray">14:00~15:00</td>
+                        </tr>
+                        <tr>
+                            <td class="td-gray">15:00~16:00</td>
+                            <td class="td-blue" rowspan="2">신기술 분야별 강의 II<br>15:00~16:40</td>
+                            <td class="td-blue" rowspan="2">신기술 분야별 강의 IV<br>15:00~16:40</td>
+                            <td class="td-blue" rowspan="2">신기술 분야별 강의 IV<br>15:00~16:40</td>
+                        </tr>
+                        <tr>
+                            <td class="td-gray">16:00~17:00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="main--sect02-dateButton">
+                <div id="date26" class="main--sect02-button on">12/26 (월)</div>
+                <div id="date27" class="main--sect02-button">12/27 (화)</div>
+                <div id="date28" class="main--sect02-button">12/28 (수)</div>
+                <!-- <div id="date29" class="main--sect02-button">12/29 (목)</div> -->
+            </div>
+
+            <div class="main--sect02-chart">
+                <div class="main--sect02-dataRow main--sect02-dataRow01">
+                    <div class="main--sect02-dataCol01">오전 (1H)</div>
+                    <div class="main--sect02-dataCol02">
+                        <div class="date26 show onlyData">
+                            <div>입학식</div>
+                            <p>CO-Week Academy 입학식</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main--sect02-dataRow">
+                    <div class="main--sect02-dataCol01">오후I(1H 40M)</div>
+                    <div class="main--sect02-dataCol02chart main--sect02-dataCol02" id="Pm01">
+                        <div class="main--sect02-dataCol02lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main--sect02-dataRow">
+                    <div class="main--sect02-dataCol01">오후II(1H 40M)</div>
+                    <div class="main--sect02-dataCol02chart main--sect02-dataCol02" id="Pm02">
+                        <div class="main--sect02-dataCol02lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main--excel">
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="table--title" colspan="7">강의세부내용</th>
+                    </tr>
+                    <tr class="table--tr-class">
+                        <th>컨소시엄</th>
+                        <th>강의일정</th>
+                        <th>구분</th>
+                        <th>강의진행시간</th>
+                        <th>강의명</th>
+                        <th>강사성명</th>
+                        <th>대학명</th>
+                    </tr>
+                    <div><!--인공지능@@@-->
+                        <tr class="table--tr-color">
+                            <td class="table--consFirst01 table--cons" rowspan="6">인공지능</td>
+                            <td class="table--cons" rowspan="2">12/26(월)</td>
+                            <td>강의 I</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>인공지능기초와활용(모두를 위한 인공지능 기초)
+                            </td>
+                            <td>김재광
+                            </td>
+                            <td>성균관대학교
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td>강의 II</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>기계학습
+                            </td>
+                            <td>노영민
+                            </td>
+                            <td>서울시립대학교
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td class="table--cons" rowspan="2">12/27(화)</td>
+                            <td>강의 III</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>딥러닝(딥러닝이란? : 기초와 응용)
+                            </td>
+                            <td>조영준
+                            </td>
+                            <td>전남대학교
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td>강의 IV</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>영상이해(딥러닝 기반 영상이해) 
+                            </td>
+                            <td>정희철
+                            </td>
+                            <td>경북대학교
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td class="table--cons" rowspan="2">12/28(수)</td>
+                            <td>강의 V</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>인공지능과 산업(공공분야 시각 인공지능)
+                            </td>
+                            <td>박종열
+                            </td>
+                            <td>서울과학기술대학교
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td>강의 VI</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>인공지능과 산업(음성합성과 인공지능)
+                            </td>
+                            <td>이영한
+                            </td>
+                            <td>서울과학기술대학교
+                            </td>
+                        </tr>
+                    </div>
+                    <div><!--빅데이터@@@-->
+                        <tr>
+                            <td class="table--consFirst02 table--cons" rowspan="6">빅데이터</td>
+                            <td class="table--cons" rowspan="2">12/26(월)</td>
+                            <td>강의 I</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>빅데이터와 사용자경험
+                            </td>
+                            <td>이슬찬
+                            </td>
+                            <td>경상국립대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>강의 II</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>빅데이터 정보보호
+                            </td>
+                            <td>이용희
+                            </td>
+                            <td>서울시립대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table--cons" rowspan="2">12/27(화)</td>
+                            <td>강의 III</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>엑셀을 이용한 데이터 활용
+                            </td>
+                            <td>안정용
+                            </td>
+                            <td>전북대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>강의 IV</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>빅데이터 수학 (영어강의)
+                            </td>
+                            <td>Otto van Koert
+                            </td>
+                            <td>서울대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table--cons" rowspan="2">12/28(수)</td>
+                            <td>강의 V</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>파이썬과 데이터 분석
+                            </td>
+                            <td>천민규
+                            </td>
+                            <td>경기과학기술대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>강의 VI</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>데이터 분석 및 활용
+                            </td>
+                            <td>김철연
+                            </td>
+                            <td>숙명여자대학교
+                            </td>
+                        </tr>
+                    </div>
+                    <div><!--차세대반도체@@@-->
+                        <tr class="table--tr-color">
+                            <td class="table--consFirst03 table--cons" rowspan="6">차세대반도체</td>
+                            <td class="table--cons" rowspan="2">12/26(월)</td>
+                            <td>강의 I</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>주문형 반도체 (ASIC)란 무엇일까?</td>
+                            <td>김정범</td>
+                            <td>강원대학교</td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td>강의 II</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>인공지능 반도체의 과거와 현재, 그리고 미래</td>
+                            <td>선우경</td>
+                            <td>서울대학교</td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td class="table--cons" rowspan="2">12/27(화)</td>
+                            <td>강의 III</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>트랜지스터와 집적회로
+                            </td>
+                            <td>류성주
+                            </td>
+                            <td>숭실대학교 
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td>강의 IV</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>반도체 센서로 바라보는 세상
+                            </td>
+                            <td>양성수
+                            </td>
+                            <td>조선이공대학교
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td class="table--cons" rowspan="2">12/28(수)</td>
+                            <td>강의 V</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>반도체 역사
+                            </td>
+                            <td>송상헌
+                            </td>
+                            <td>중앙대학교
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td>강의 VI</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>반도체가 바꾼 당신의 삶
+                            </td>
+                            <td>김병섭
+                            </td>
+                            <td>포항공과대학교
+                            </td>
+                        </tr>
+                    </div>
+                    <div><!--미래자동차@@@-->
+                        <tr>
+                            <td class="table--consFirst04 table--cons" rowspan="6">미래자동차</td>
+                            <td class="table--cons" rowspan="2">12/26(월)</td>
+                            <td>강의 I</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>미래 전기자동차 트랜드 
+                            </td>
+                            <td>정찬복
+                            </td>
+                            <td>계명대학교</td>
+                        </tr>
+                        <tr>
+                            <td>강의 II</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>미래자동차와 영상센서 그리고 컴퓨터비전 기술
+                            </td>
+                            <td>심인욱
+                            </td>
+                            <td>인하대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table--cons" rowspan="2">12/27(화)</td>
+                            <td>강의 III</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>미래자동차를 위한 인공지능 기술 동향
+                            </td>
+                            <td>황영배
+                            </td>
+                            <td>충북대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>강의 IV</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>자동차와 우리의 미래의 삶과 문화
+                            </td>
+                            <td>김근식
+                            </td>
+                            <td>선문대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table--cons" rowspan="2">12/28(수)</td>
+                            <td>강의 V</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>자율주행에 대처하는 차량의 자세
+                            </td>
+                            <td>우승훈
+                            </td>
+                            <td>국민대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>강의 VI</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>자율주행과 시뮬레이션
+                            </td>
+                            <td>기석철
+                            </td>
+                            <td>충북대학교
+                            </td>
+                        </tr>
+                    </div>
+                    <div><!--바이오헬스@@@-->
+                        <tr class="table--tr-color">
+                            <td class="table--consFirst05 table--cons" rowspan="6">바이오헬스</td>
+                            <td class="table--cons" rowspan="2">12/26(월)</td>
+                            <td>강의 I</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>의료 메타버스가 꿈꾸는 세계 : Play to save lives!
+                            </td>
+                            <td>박선영(정효정)
+                            </td>
+                            <td>뉴베이스(단국대)
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td>강의 II</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>우리 모두의 빛나는 삶을 위한 헬스케어 서비스디자인
+                            </td>
+                            <td>정승훈(정효정)
+                            </td>
+                            <td>윤슬케어(단국대)
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td class="table--cons" rowspan="2">12/27(화)</td>
+                            <td>강의 III</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>환자를 메이커(Maker)로, 전문가(expert)로, 협력자(collaborator)로 
+                            </td>
+                            <td>김미영·이성희(황윤자)
+                            </td>
+                            <td>한국1형당뇨병환우회(단국대)
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td>강의 IV</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>사람을 위한 웨어러블 디바이스, 3D프린터로 만드는 전자의수
+                            </td>
+                            <td>이상호(황윤자)
+                            </td>
+                            <td>만드로(단국대)
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td class="table--cons" rowspan="2">12/28(수)</td>
+                            <td>강의 V</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>디지털 헬스케어, 웨어러블 디바이스, 원격의료 이야기
+                            </td>
+                            <td>길영준(정효정)
+                            </td>
+                            <td>휴이노(단국대)
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td>강의 VI</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>소프트웨어 기반 디지털 헬스케어, 디지털 치료제의 현재와 미래
+                            </td>
+                            <td>노유헌·민정상(정효정)</td>
+                            <td>이모코그·이모티브(단국대)</td>
+                        </tr>
+                    </div>
+                    <div><!--실감미디어@@@-->
+                        <tr>
+                            <td class="table--consFirst06 table--cons" rowspan="6">실감미디어</td>
+                            <td class="table--cons" rowspan="2">12/26(월)</td>
+                            <td>강의 I</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>XR 창업 및 비즈니스 모델
+                            </td>
+                            <td>이일한
+                            </td>
+                            <td>중앙대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>강의 II</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>게임/애니메이션 분야의 모델링과 캐릭터 아트의 활용
+                            </td>
+                            <td>권인선
+                            </td>
+                            <td>배재대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table--cons" rowspan="2">12/27(화)</td>
+                            <td>강의 III</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>게임 프로젝트
+                            </td>
+                            <td>임충재
+                            </td>
+                            <td>계명대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>강의 IV</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>실감미디어와 경험
+                            </td>
+                            <td>김형석
+                            </td>
+                            <td>건국대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table--cons" rowspan="2">12/28(수)</td>
+                            <td>강의 V</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>버츄얼 캐릭터 엔터테인먼트
+                            </td>
+                            <td>동그라미
+                            </td>
+                            <td>계원예술대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>강의 VI</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>소셜리빙랩 /로컬콘텐츠 실감미디어 PBL
+                            </td>
+                            <td>박형웅
+                            </td>
+                            <td>전주대학교
+                            </td>
+                        </tr>
+                    </div>
+                    <div><!--지능형로봇@@@-->
+                        <tr class="table--tr-color">
+                            <td class="table--consFirst07 table--cons" rowspan="6">지능형로봇</td>
+                            <td class="table--cons" rowspan="2">12/26(월)</td>
+                            <td>강의 I</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>미래의 로봇에서는 어떤 기어 및 동력 시스템이 사용될까?
+                            </td>
+                            <td>박의종
+                            </td>
+                            <td>조선대학교
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td>강의 II</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>미래의 스마트팜, 지능형로봇이 해결한다
+                            </td>
+                            <td>김기환
+                            </td>
+                            <td>영진전문대학교
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td class="table--cons" rowspan="2">12/27(화)</td>
+                            <td>강의 III</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>지능 로봇의 개념과 주요 기술 소개
+                            </td>
+                            <td>오정현
+                            </td>
+                            <td>광운대학교
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td>강의 IV</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>로봇 기반 미래 생산시스템
+                            </td>
+                            <td>김효영
+                            </td>
+                            <td>한국공대학교
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td class="table--cons" rowspan="2">12/28(수)</td>
+                            <td>강의 V</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>사람을 이롭게하는 해양·수산 자동화기술부터 로봇까지
+                            </td>
+                            <td>이동훈
+                            </td>
+                            <td>부경대학교
+                            </td>
+                        </tr>
+                        <tr class="table--tr-color">
+                            <td>강의 VI</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>근력보조 및 재활치료를 위한 웨어러블 로봇
+                            </td>
+                            <td>최현진
+                            </td>
+                            <td>상명대학교
+                            </td>
+                        </tr>
+                    </div>
+                    <div><!--에너지신산업-->
+                        <tr>
+                            <td class="table--consFirst08 table--cons" rowspan="6">에너지신산업</td>
+                            <td class="table--cons" rowspan="2">12/26(월)</td>
+                            <td>강의 I</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>리튬이온전지의 작동원리와 제조 기초
+                            </td>
+                            <td>박민준
+                            </td>
+                            <td>부산대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>강의 II</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>에너지환경기술: 물과 폐자원의 순환
+                            </td>
+                            <td>김현우
+                            </td>
+                            <td>전북대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table--cons" rowspan="2">12/27(화)</td>
+                            <td>강의 III</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>이차전지 산업의 과거, 현재와 미래
+                            </td>
+                            <td>이광세
+                            </td>
+                            <td>경남정보대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>강의 IV</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>ESG와 에너지 경영
+                            </td>
+                            <td>김기현
+                            </td>
+                            <td>강원대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table--cons" rowspan="2">12/28(수)</td>
+                            <td>강의 V</td>
+                            <td>13:00 ~ 14:40</td>
+                            <td>차세대 에너지저장 소재의 신기술  
+                            </td>
+                            <td>윤영수
+                            </td>
+                            <td>고려대학교
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>강의 VI</td>
+                            <td>15:00 ~ 16:40</td>
+                            <td>탄소중립과 에너지신산업의 미래기술 개발  
+                            </td>
+                            <td>정학근
+                            </td>
+                            <td>한국에너지기술연구원
+                            </td>
+                        </tr>
+                    </div>
+                </tbody>
+            </table>
+        </div>
+        <!-- <div class="main--poster">
+            <div class="main--poster-wrap">
+                <div class="main--poster-img">
+                    <div class="main--poster-imgCont">
+                        <p>포스터 준비중 입니다.</p>
+                    </div>
+                </div>
+                <div class="main--poster-text">
+                    <div class="main--poster-text01">CO-WEEK</div>
+                    <div class="main--poster-text02">공유대학이 현실에 나타나는 POP-UP 캠퍼스</div>
+                    <div class="main--poster-text03"><span>일정</span>2022년 12월 26일~30일</div>
+                    <div class="main--poster-text03"><span>장소</span>삼성동 COEX</div>
+                    <div class="main--poster-text04"><span>Co-Week란?</span>
+                        제1회 Co-Week는 공유대학이 현실에 나타나는 POP-UP캠퍼스의 형태로,
+                        시스템으로 존재하던 디지털 신기술 인재양성 혁신공유대학사업이 1년에 단 1번
+                        현실에 존재하는 주간을 의미합니다.<br>
+                        8개 컨소시엄, 산업교육혁신센터에서 준비한 강의와, <br class="not480">
+                        다양한 명사들의 강의까지 함께 만나보세요!<br>
+                        Plus,입학식 및 수료식 등 실제 대학에서 이뤄지는
+                        다양한 이벤트들을 함께 만나보세요!
+                    </div>
+                    <div class="main--poster-download">
+                        <a href="/main.html">포스터 다운로드</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="main--sect05">
+            <div class="main--sect05-box">
+                <img src="./images/main05_person.png" alt="">
+            </div>
+            <div class="main--sect05-box">
+                <p class="sect05-text01">Co-Week</p>
+                <p class="sect05-text02">Co-WEEK,<br>공유대학이 현실에 나타나는 POP-UP캠퍼스</p>
+                <div class="sect05-c">
+                    <p class="sect05-text03"><span>일정</span>2022년 12월 26일~29일</p>
+                    <p class="sect05-text03"><span>장소</span>삼성동 COEX</p>
+                </div>
+                <div class="sect05-text04">
+                    Co-Week란?<br class="important">
+                    제1회 Co-Week는 공유대학이 현실에 나타나는 POP-UP캠퍼스의 형태로,<br>
+                    시스템으로 존재하던 디지털 신기술 인재양성 혁신공유대학사업이 1년에 단 1번<br>
+                    현실에 존재하는 주간을 의미합니다.<br>
+                    8개 컨소시엄, 산업교육센터에서 준비한 강의와,<br>
+                    다양한 명사들의 강의까지 함께 만나보세요!<br>
+                    Plus,입학식 및 수료식 등 실제 대학에서 이뤄지는<br>
+                    다양한 이벤트들을 함께 만나보세요!<br>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="main--sect03">
+            <div class="main--sect03-bg">
+                <img src="./images/main03cha.png" alt="">
+            </div>
+            <div class="main--titleBox">
+                <div class="main--titleBox-text01">POSTER</div>
+                <div class="main--titleBox-text02">Co-Week 행사 포스터</div>
+                <div class="main--titleBox-text03">코위크에서 진행하는 다양한 교육과 이벤트를 접해보세요.</div>
+            </div>
+            <div class="main--sect03-img01"><img src="./images/main03poster.png" alt=""></div>
+            <div class="main--sect03-download"><a href="./images/main03poster.png">포스터 다운로드</a></div>
+        </div> -->
+        <div class="main--sect04">
+            <div class="main--titleBox">
+                <div class="main--titleBox-text01">VIDEO</div>
+                <div class="main--titleBox-text02">영상으로 만나는 Co-Week</div>
+            </div>
+            <div class="main--sect04-video">
+                <video playsinline controls autoplay muted loop src="https://player.vimeo.com/progressive_redirect/playback/752875787/rendition/360p/file.mp4?loc=external&signature=b10761e41cebc86c08d2029d70400fd8339047eb9a4c13523e26205f7ac8e445"></video>
+                <!-- <p>준비중 입니다.</p> -->
+            </div>
+        </div>
+    </div>
+    <div id="header" class="header">
+        <div class="header--wrap">
+            <div class="header--left"><a href="/main.html"><span>CO-WEEK</span> 아카데미</a></div>
+            <div class="header--center">
+                <a class="on" href="/main.html">코위크 아카데미 소개</a>
+                <a href="/sub.html">수강신청 방법</a>
+                <a href="/detail/detail.html">특별강좌</a>
+            </div>
+            <div class="header--right"></div>
+        </div>
+    </div>
+    <div id="footer" class="footer"></div>
+    <div id="classPop" class="main--popup">
+        <div id="classPopBg" class="main--popup-bg"></div>
+        <div id="dataPopup" class="main--popup-container">
+            <div id="classPopClose" class="main--popup-close"><span></span><span></span></div>
+        </div>
+    </div>
+    <div id="eventPopup" class="eventPopup">
+        <div class="eventPopup--img">
+            <img src="./images/event_popup.png" alt="">
+            <a href="./sub.html"></a>
+            <div class="eventPopup--buttons">
+                <div onclick="todaycloseWin01()" class="eventPopupOneday" id="eventPopupOneday">하루동안 열지않기</div>
+                <div onclick="closeWin01()" class="eventPopupClose" id="eventPopupClose">닫기</div>
+            </div>
+        </div>
+    </div>
+    <div id="eventPopup02" class="eventPopup eventPopup02">
+        <div class="eventPopup--img">
+            <img src="./images/event_popup02.png" alt="">
+            <div class="eventPopup--buttons">
+                <div onclick="todaycloseWin02()" class="eventPopupOneday" id="eventPopupOneday02">하루동안 열지않기</div>
+                <div onclick="closeWin02()" class="eventPopupClose" id="eventPopupClose02">닫기</div>
+            </div>
+        </div>
+    </div>
+    <div id="alwaysButton" class="alwaysButton"><a href="https://coss.nrf.re.kr/main.do" target="blank"><img src="./images/alwaysButton.png" alt=""></a></div>
+    <script src="./component.js"></script>
+    <script type="module" src="./getTime.js"></script>
+    <script type="module" src="./callData.js"></script>
+</body>
+</html>
