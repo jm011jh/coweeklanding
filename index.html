@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <link rel="stylesheet" href="/public.css">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="./publish/css/landingpublic.css">
+    <link rel="stylesheet" href="./publish/css/landing.css">
     <title>welcome to co-week</title>
+    <script>
+        function showAlert(){
+            alert("준비중 입니다.")
+        }
+    </script>
 </head>
 <body>
     <div class="index--container">
@@ -18,34 +23,43 @@
             <div class="index--text">
                 <div class="index--text01"><span>공유대학이 현실에 나타나는</span> <b>POP-UP 캠퍼스</b></div>
                 <div class="index--text02">2022 CO-WEEK</div>
-                <div class="index--text03"><img src="./images/index_green.png" alt=""></div>
-                <!-- <div class="index--text04">2022 코위크 아카데미</div> -->
+                <div class="index--text03"><img src="./publish/images/index_green.png" alt=""></div>
+                <div class="index--text04">10/4(화) 낮 12시부터 수강신청이 시작됩니다!</div>
                 <div class="index--text05"><span>수강신청을 놓치지 마세요</span><p>10.4(화) ~ 10.7(금)</p></div>
             </div>
         </div>
         <div class="index--link">
             <div class="index--link-wrap">
 
-                <a href="https://coss.nrf.re.kr/">
+                <a onclick="showAlert()" href="javascript:void(0)">
                     <div class="index--link-text">
                         <div class="index--link-text01">COSS</div>
                         <div class="index--link-text02">디지털 신기술 인재양성 <br>혁신공유대학</div>
                         <div class="index--link-text03">👉공식홈페이지 바로가기</div>
                     </div>
-                    <div class="index--link-img"><img src="./images/index_link01.png" alt=""></div>
+                    <div class="index--link-img"><img src="./publish/images/index_link01.png" alt=""></div>
                 </a>
-                <a href="/main.html">
+                <a href="http://www.coweek.kr/index.php">
                     <div class="index--link-text">
                         <div class="index--link-text01">2022 코위크 아카데미</div>
                         <div class="index--link-text02">제1회 Co-Week는 공유대학이 <br>현실에 나타나는 POP-UP캠퍼스</div>
                         <div class="index--link-text03">👉코위크 수강 신청하기</div>
                     </div>
-                    <div class="index--link-img"><img src="./images/index_link02.png" alt=""></div>
+                    <div class="index--link-img"><img src="./publish/images/index_link02.png" alt=""></div>
                 </a>
             </div>
         </div>
-        <div id="footer" class="footer"></div>
+        <div id="footer" class="footer">
+            <div class="footer--wrap">
+                <div class="footer--wrap-box">
+                    <p class="big">CO-Week Academy 운영사무국</p>
+                    <p>연락처 : 02-2135-1132 | 이메일 : coss_1234@naver.com</p>
+                </div>
+                <div class="footer--wrap-box">
+                    <p>Copyright ⓒ 2022 Co-Week. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="./component.js"></script>
 </body>
 </html>

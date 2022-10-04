@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 900;
+    font-display: swap;
+    src: local("Pretendard Black"), url("/font/woff2/Pretendard-Black.woff2") format("woff2"), url("/font/woff/Pretendard-Black.woff") format("woff"), url("/font/otf/Pretendard-Black.otf") format("otf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-display: swap;
+    src: local("Pretendard ExtraBold"), url("/font/woff2/Pretendard-ExtraBold.woff2") format("woff2"), url("/font/woff/Pretendard-ExtraBold.woff") format("woff"), url("/font/otf/Pretendard-ExtraBold.otf") format("otf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-display: swap;
+    src: local("Pretendard Bold"), url("/font/woff2/Pretendard-Bold.woff2") format("woff2"), url("/font/woff/Pretendard-Bold.woff") format("woff"), url("/font/otf/Pretendard-Bold.otf") format("otf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-display: swap;
+    src: local("Pretendard SemiBold"), url("/font/woff2/Pretendard-SemiBold.woff2") format("woff2"), url("/font/woff/Pretendard-SemiBold.woff") format("woff"), url("/font/otf/Pretendard-SemiBold.otf") format("otf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-display: swap;
+    src: local("Pretendard Medium"), url("/font/woff2/Pretendard-Medium.woff2") format("woff2"), url("/font/woff/Pretendard-Medium.woff") format("woff"), url("/font/otf/Pretendard-Medium.otf") format("otf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-display: swap;
+    src: local("Pretendard Regular"), url("/font/woff2/Pretendard-Regular.woff2") format("woff2"), url("/font/woff/Pretendard-Regular.woff") format("woff"), url("/font/otf/Pretendard-Regular.otf") format("otf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-display: swap;
+    src: local("Pretendard Light"), url("/font/woff2/Pretendard-Light.woff2") format("woff2"), url("/font/woff/Pretendard-Light.woff") format("woff"), url("/font/otf/Pretendard-Light.otf") format("otf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    font-display: swap;
+    src: local("Pretendard ExtraLight"), url("/font/woff2/Pretendard-ExtraLight.woff2") format("woff2"), url("/font/woff/Pretendard-ExtraLight.woff") format("woff"), url("/font/otf/Pretendard-ExtraLight.otf") format("otf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 100;
+    font-display: swap;
+    src: local("Pretendard Thin"), url("/font/woff2/Pretendard-Thin.woff2") format("woff2"), url("/font/woff/Pretendard-Thin.woff") format("woff"), url("/font/otf/Pretendard-Thin.otf") format("otf");
+}
+*{padding: 0;margin: 0;box-sizing: border-box;word-break: keep-all;font-family: 'Pretendard';}
+:root{
+    --sidePadding--:36px;
+    --black01--:#0b1223;
+    --black02--:#0e0e0f;
+    --black03--:#181a1e;
+    --blue01--:#0a54ff;
+    --yellow01--:#ffc939;
+}
+a{text-decoration: none;color: inherit;}
+a:visited{color: inherit;text-decoration: none !important;}
+.header{position: fixed;top: 0;left: 0;width: 100%;height: 100px;display: flex;align-items: center;justify-content: center;padding: 0 var(--sidePadding--);z-index: 50;border-bottom:1px solid rgba(170,170,170,0.2);}
+.header a{padding: 0 12px;}
+.header.color{background-color: #0e0e0f;border-bottom: 1px solid rgba(255,255,255,0);}
+.header--wrap{display: flex;justify-content: space-between;width: 100%;}
+/* .container{padding-top: 100px;} */
+.header--left{font-size: 20px;color: #fff;display: flex;align-items: center;}
+.header--left a span{font-weight: 600;}
+.header--left a:visited{color: #fff;text-decoration: none;}
+.header--center{display: flex;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+.header--center a{width: 200px;border-bottom: 2px solid rgba(0,0,0,0);height: 98px;display: flex;align-items: center;color: #fff;font-size: 16px;font-weight: 600;justify-content: center;}
+.header--center a:visited{color: #fff;}
+.header--center a.on{color: #fff;border-bottom: 2px solid #fff;}
+.header.color .header--center a.on{color: #fff;border-bottom: 2px solid #fff;}
+@media all and (max-width:1024px){
+    .header{height: 80px;padding: 10px 0;}
+    .header--left{font-size: 16px;}
+    .header--center{position: static;left: unset;top: unset;transform: translate(0%,0%);}
+    .header--center a{width: unset;font-size: 14px;height: 78px;}
+    .header--right{display: none;}
+}
+@media all and (max-width:767px){
+    :root{
+        --sidePadding--:18px;
+    }
+    .header{height: 60px;}
+    .header--center a{font-size: 13px;height: 60px;}
+}
+
+.footer{width: 100%;padding: 40px 20px;background-color: #0e0e0f;}
+.footer--wrap{display: flex;justify-content: space-between;width: 100%;max-width: 1280px;margin: auto;}
+.footer--wrap-box{max-width: 630px;font-size: 12px;color: #595c63;display: flex;flex-direction: column;justify-content: flex-end;}
+.footer--wrap-box p:not(.big){line-height: 1.66;}
+.footer--wrap-box .big{font-size: 13px;color: #fff;margin: 16px 0;}
+@media all and (max-width:767px){
+    .footer--wrap{flex-direction: column;}
+}
+
+.alwaysButton{position: fixed;z-index: 70;bottom: 60px;right: 40px;}
+.alwaysButton img{width: 108px;}
+@media all and (max-width:767px){
+    .alwaysButton{right: 20px;bottom: 20px;}
+    .alwaysButton img{width: 68px;}
+}
+.eventPopup{position: fixed;top: 50%;left: 50%;z-index: 60;width: calc(100% - 80px);max-width: 400px;transform: translate(-50%,-50%);}
+.eventPopup02{left: 10%;top: 50%;transform: translate(0,-50%);}
+.eventPopup.hide{display: none;}
+.eventPopup img{width: 100%;display: block;}
+.eventPopup a{position: absolute;bottom: 30px;left: 0;width: 100%;padding-top: 16%;}
+.eventPopup--buttons{display: flex;justify-content: space-between;border: solid rgba(0,0,0,0.3);border-width: 0px 1px 1px 1px;}
+.eventPopup .eventPopupClose{display: block;padding: 4px;outline: none;border: none;cursor: pointer;color: 111;border-radius: 0;background-color: #fff;width: 50%;font-size: 14px;text-align: center;border-left:1px solid rgba(0,0,0,0.3);}
+.eventPopup .eventPopupOneday{display: block;padding: 4px;outline: none;border: none;cursor: pointer;color: 111;border-radius: 0;background-color: #fff;width: 50%;font-size: 14px;text-align: center;}

@@ -13,8 +13,8 @@ var hours = date.getHours();
 var minutes = date.getMinutes();
 var seconds = date.getSeconds();
 
-CountDownSet('10/04/2022', 'countdown');
-CountDownTimer('10/04/2022', 'countdown');
+CountDownSet('10/04/2022 12:00:00', 'countdown');
+CountDownTimer('10/04/2022 12:00:00', 'countdown');
 
     function CountDownTimer(dt, id){
         var end = new Date(dt);

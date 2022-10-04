@@ -7,15 +7,15 @@
     <title>welcome to co-week</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <link rel="stylesheet" href="/public.css">
-    <link rel="stylesheet" href="/main.css">
-    <script src="./popup.js"></script>
+    <link rel="stylesheet" href="./publish/css/landingpublic.css">
+    <link rel="stylesheet" href="./publish/css/landingmain.css">
+    <script src="./publish/js/popup.js"></script>
 </head>
 <body>
     <div id="container" class="container">
         <div class="main--sect01">
             <div class="sect01--row sect01--row01">
-                <div class="sect01--row01-img sect01--row01-img01"><img src="./images/main_text01.png" alt=""></div>
+                <div class="sect01--row01-img sect01--row01-img01"><img src="./publish/images/main_text01.png" alt=""></div>
                 <div class="sect01--row02">
                     <div class="sect01--row2-1">
                         <div class="sect01--row2-text01"><span>기간</span>2022년 12월 26일(월)~29일(목)</div>
@@ -25,7 +25,7 @@
                         <div class="sect01--row2-text02"><p>10월 4일(화) PM 12:00 수강신청 오픈</p></div>
                     </div>
                     <div class="sect01--row2-2">
-                        <img src="./images/main_text03.png" alt="">
+                        <img src="./publish/images/main_text03.png" alt="">
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
             </div>
             <div class="main--sect02-chartImg">
                 <div class="main--sect02-chartImgWrap">
-                    <!-- <img src="./images/main_chart.png" alt=""> -->
+                    <!-- <img src="./publish/images/main_chart.png" alt=""> -->
                     <table class="main--sect02-table">
                         <tr>
                             <th colspan="2">구분</th>
@@ -719,7 +719,7 @@
         </div> -->
         <div class="main--sect05">
             <div class="main--sect05-box">
-                <img src="./images/main05_person.png" alt="">
+                <img src="./publish/images/main05_person.png" alt="">
             </div>
             <div class="main--sect05-box">
                 <p class="sect05-text01">Co-Week</p>
@@ -742,15 +742,15 @@
         </div>
         <!-- <div class="main--sect03">
             <div class="main--sect03-bg">
-                <img src="./images/main03cha.png" alt="">
+                <img src="./publish/images/main03cha.png" alt="">
             </div>
             <div class="main--titleBox">
                 <div class="main--titleBox-text01">POSTER</div>
                 <div class="main--titleBox-text02">Co-Week 행사 포스터</div>
                 <div class="main--titleBox-text03">코위크에서 진행하는 다양한 교육과 이벤트를 접해보세요.</div>
             </div>
-            <div class="main--sect03-img01"><img src="./images/main03poster.png" alt=""></div>
-            <div class="main--sect03-download"><a href="./images/main03poster.png">포스터 다운로드</a></div>
+            <div class="main--sect03-img01"><img src="./publish/images/main03poster.png" alt=""></div>
+            <div class="main--sect03-download"><a href="./publish/images/main03poster.png">포스터 다운로드</a></div>
         </div> -->
         <div class="main--sect04">
             <div class="main--titleBox">
@@ -769,7 +769,7 @@
             <div class="header--center">
                 <a class="on" href="/main.html">코위크 아카데미 소개</a>
                 <a href="/sub.html">수강신청 방법</a>
-                <a href="/detail/detail.html">특별강좌</a>
+                <a href="/publish/detail/detail.html">특별강좌</a>
             </div>
             <div class="header--right"></div>
         </div>
@@ -783,8 +783,8 @@
     </div>
     <div id="eventPopup" class="eventPopup">
         <div class="eventPopup--img">
-            <img src="./images/event_popup.png" alt="">
-            <a href="./sub.html"></a>
+            <img src="./publish/images/event_popup.png" alt="">
+            <a href="./publishsub.html"></a>
             <div class="eventPopup--buttons">
                 <div onclick="todaycloseWin01()" class="eventPopupOneday" id="eventPopupOneday">하루동안 열지않기</div>
                 <div onclick="closeWin01()" class="eventPopupClose" id="eventPopupClose">닫기</div>
@@ -793,16 +793,16 @@
     </div>
     <div id="eventPopup02" class="eventPopup eventPopup02">
         <div class="eventPopup--img">
-            <img src="./images/event_popup02.png" alt="">
+            <img src="./publish/images/event_popup02.png" alt="">
             <div class="eventPopup--buttons">
                 <div onclick="todaycloseWin02()" class="eventPopupOneday" id="eventPopupOneday02">하루동안 열지않기</div>
                 <div onclick="closeWin02()" class="eventPopupClose" id="eventPopupClose02">닫기</div>
             </div>
         </div>
     </div>
-    <div id="alwaysButton" class="alwaysButton"><a href="https://coss.nrf.re.kr/main.do" target="blank"><img src="./images/alwaysButton.png" alt=""></a></div>
-    <script src="./component.js"></script>
-    <script type="module" src="./getTime.js"></script>
-    <script type="module" src="./callData.js"></script>
+    <div id="alwaysButton" class="alwaysButton"><a href="https://coss.nrf.re.kr/main.do" target="blank"><img src="./publish/images/alwaysButton.png" alt=""></a></div>
+    <script src="./publish/js/landingcomponent.js"></script>
+    <script type="module" src="./publish/js/getTime.js"></script>
+    <script type="module" src="./publish/js/callData.js"></script>
 </body>
 </html>

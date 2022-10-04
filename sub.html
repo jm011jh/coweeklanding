@@ -7,14 +7,14 @@
     <title>welcome to co-week</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <link rel="stylesheet" href="./public.css">
-    <link rel="stylesheet" href="./sub.css">
+    <link rel="stylesheet" href="./publish/css/landingpublic.css">
+    <link rel="stylesheet" href="./publish/css/sub.css">
 </head>
 <body>
     <div id="container" class="container">
         <div class="sub--01">
             <div class="sub--01-wrap">
-                <div class="sub--01-img"><img src="./images/sub_img01.png" alt=""></div>
+                <div class="sub--01-img"><img src="./publish/images/sub_img01.png" alt=""></div>
                 <div class="sub--01-text">
                     <div class="sub--01-text01">수강신청 방법<br>프로세스!</div>
                     <div class="sub--01-blueSpan"></div>
@@ -57,7 +57,7 @@
                         <div class="sub--03-text03">검색창에 CoWeek를 검색해 <br>코위크 홈페이지에 접속해 주세요.</div>
                     </div>
                     <div class="sub--03-cont-left sub--03-cont-left01">
-                        <img src="./images/sub_cont01.png" alt="">
+                        <img src="./publish/images/sub_cont01.png" alt="">
                     </div>
                 </div>
                 <div class="sub--03-cont">
@@ -66,7 +66,7 @@
                             <div class="sub--03-text02">CoWeek<br>홈페이지 접속 🖥</div>
                             <div class="sub--03-text03">코위크 홈페이지에 방문하셨나요? <br>다양한 프로그램들을 확인해 주세요.</div>
                     </div>
-                    <div class="sub--03-cont-left sub--03-cont-left01new"><img src="./images/sub_contnew01.png" alt=""></div>
+                    <div class="sub--03-cont-left sub--03-cont-left01new"><img src="./publish/images/sub_contnew01.png" alt=""></div>
                 </div>
                 <div class="sub--03-cont">
                     <div class="sub--03-cont-right">
@@ -74,7 +74,7 @@
                             <div class="sub--03-text02">회원가입 후 <br>로그인해주세요. 😉</div>
                             <div class="sub--03-text03">본인이 소속된 조직(학교, 직장인 등)에 맞게 <br>선택 후 가입하여 주십시오.</div>
                     </div>
-                    <div class="sub--03-cont-left sub--03-cont-left02new"><img src="./images/sub_contnew02.png" alt=""></div>
+                    <div class="sub--03-cont-left sub--03-cont-left02new"><img src="./publish/images/sub_contnew02.png" alt=""></div>
                 </div>
                 <div class="sub--03-cont">
                     <div class="sub--03-cont-right">
@@ -98,7 +98,7 @@
                             <div class="sub--03-text02">수강신청 <br>클릭하면 끝! 😃</div>
                             <div class="sub--03-text03">수강신청 페이지에 강의 상세내용을 확인한 뒤 <br>수강신청을 클릭하면 수강신청 끝!</div>
                     </div>
-                    <div class="sub--03-cont-left sub--03-cont-left03"><img src="./images/sub_cont03.png" alt=""></div>
+                    <div class="sub--03-cont-left sub--03-cont-left03"><img src="./publish/images/sub_cont03.png" alt=""></div>
                 </div>
                 <div class="sub--03-contNew sub--03-cont">
                     <div class="sub--03-contNew-text">
@@ -122,16 +122,16 @@
             <div class="header--center">
                 <a href="/main.html">코위크 아카데미 소개</a>
                 <a class="on" href="/sub.html">수강신청 방법</a>
-                <a href="/detail/detail.html">특별강좌</a>
+                <a href="/publish/detail/detail.html">특별강좌</a>
             </div>
             <div class="header--right"></div>
         </div>
     </div>
     <div id="footer" class="footer"></div>
-    <div id="alwaysButton" class="alwaysButton"><a href="https://coss.nrf.re.kr/main.do" target="blank"><img src="./images/alwaysButton.png" alt=""></a></div>
+    <div id="alwaysButton" class="alwaysButton"><a href="https://coss.nrf.re.kr/main.do" target="blank"><img src="./publish/images/alwaysButton.png" alt=""></a></div>
     <div id="eventPopup" class="eventPopup">
         <div class="eventPopup--img">
-            <img src="./images/event_popup.png" alt="">
+            <img src="./publish/images/event_popup.png" alt="">
             <a href="./sub.html"></a>
             <div class="eventPopup--buttons">
                 <div onclick="todaycloseWin01()" class="eventPopupOneday" id="eventPopupOneday">하루동안 열지않기</div>
@@ -141,16 +141,15 @@
     </div>
     <div id="eventPopup02" class="eventPopup eventPopup02">
         <div class="eventPopup--img">
-            <img src="./images/event_popup02.png" alt="">
+            <img src="./publish/images/event_popup02.png" alt="">
             <div class="eventPopup--buttons">
                 <div onclick="todaycloseWin02()" class="eventPopupOneday" id="eventPopupOneday02">하루동안 열지않기</div>
                 <div onclick="closeWin02()" class="eventPopupClose" id="eventPopupClose02">닫기</div>
             </div>
         </div>
     </div>
-    <script src="./component.js"></script>
-    <script src="./getTime.js"></script>
-    <script src="./sub.js"></script>
-    <script src="./popup.js"></script>
+    <script src="./publish/js/landingcomponent.js"></script>
+    <script src="./publish/js/getTime.js"></script>
+    <script src="./publish/js/popup.js"></script>
 </body>
 </html>
