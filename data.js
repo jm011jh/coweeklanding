@@ -1112,7 +1112,7 @@ export default [
     },{//이광세
         clName1 : "이차전지 산업의 과거, 현재와 미래",
         
-        clType : "이차전지",
+        clType : "에너지신산업",
         clSchool : "경남정보대학교",
         clGoal : "이차전지의 산업동향 및 4대 구성요소를 알 수 있다.",
         clData : "yes",
@@ -1134,6 +1134,30 @@ export default [
         tcEmail : "leeks@eagle.kit.ac.kr",
         date:27,
         timeNumber:1,
+    },{//윤영수
+        clName1 : "차세대 에너지저장 소재의 신기술", 
+        clType : "에너지신산업",
+        clSchool : "고려대학교",
+        clGoal : "이차전지의 산업동향 및 4대 구성요소를 알 수 있다.",
+        clData : "yes",
+        clRecommendFor : [
+            "화학 관련 대학생 및 이차 전지 동향에 관심있는 일반인 대상"
+        ],
+        clExpection : [
+            "이차전지의 전반적인 산업 동향을 알게 됨으로써 좀 더 에너지 분야의 흥미를 유발할 수 있다.",
+            "회사마다의 추구하는 방향성을 제시함으로써 학생들의 관심도와 매칭이 되는 분야를 선택할 수 있다.",
+        ],
+        clReference : [
+            "양극재, 음극재, 분리막, 전해질, 덴드라이트, 전고체 전지"
+        ],
+        clIndex : 5,
+        tcName : "윤영수",
+        tcWhere : "고려대학교",
+        tcType : "조교수",
+        tcTel : "010-4468-6548",
+        tcEmail : "leeks@eagle.kit.ac.kr",
+        date:28,
+        timeNumber:1,
     },{//김기현
         clName1 : "ESG와 에너지 경영",
         
@@ -1148,36 +1172,12 @@ export default [
             "2050 탄소중립을 위한 에너지·디지털 전환 과정에서 새로운 기회를 모색"
         ],
         clReference : [],
-        clIndex : 5,
+        clIndex : 4,
         tcName : "김기현",
         tcWhere : "강원대학교",
         tcType : "위탁교수",
         tcTel : "010-3193-9119",
         tcEmail : "kkihyun85@kakao.com",
-        date:28,
-        timeNumber:1,
-    },{//윤영수
-        clName1 : "차세대 에너지저장 소재의 신기술", 
-        clType : "이차전지",
-        clSchool : "고려대학교",
-        clGoal : "이차전지의 산업동향 및 4대 구성요소를 알 수 있다.",
-        clData : "yes",
-        clRecommendFor : [
-            "화학 관련 대학생 및 이차 전지 동향에 관심있는 일반인 대상"
-        ],
-        clExpection : [
-            "이차전지의 전반적인 산업 동향을 알게 됨으로써 좀 더 에너지 분야의 흥미를 유발할 수 있다.",
-            "회사마다의 추구하는 방향성을 제시함으로써 학생들의 관심도와 매칭이 되는 분야를 선택할 수 있다.",
-        ],
-        clReference : [
-            "양극재, 음극재, 분리막, 전해질, 덴드라이트, 전고체 전지"
-        ],
-        clIndex : 4,
-        tcName : "윤영수",
-        tcWhere : "고려대학교",
-        tcType : "조교수",
-        tcTel : "010-4468-6548",
-        tcEmail : "leeks@eagle.kit.ac.kr",
         date:27,
         timeNumber:2,
     },{//정학근

@@ -34,9 +34,7 @@
 .detail--contents-recommend{margin-bottom: 40px;}
 .detail--contents-about:not(:first-child){margin-top: 40px;}
 .detail--contents-about-text01{margin-bottom: 0.5 em;}
-@media all and (max-width:1024px){
-    .public--container{margin-top: 0;}
-}
+
 @media all and (max-width:767px){
     .detail--contents-graph-icon{padding: 24px 20px;}
 }
